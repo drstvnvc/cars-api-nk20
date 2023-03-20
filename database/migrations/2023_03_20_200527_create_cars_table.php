@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('brand');
             $table->string('model');
             $table->year('year');
-            $table->integer('max_speed');
+            $table->integer('max_speed')->nullable();
             $table->boolean('is_automatic');
             $table->string('engine');
             $table->integer('number_of_doors');
